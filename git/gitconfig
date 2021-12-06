@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+
+[user]
+    name = Felipe Nunes
+    email = felipe.nunes@shopify.com
+
+[rebase]
+    autoStash = true
+
+[alias]
+	co = checkout
+    slog = log --oneline
+	amend = commit --amend --no-edit
+	delete-branches = !git branch | grep -v master | xargs git branch -D
+	rename = git mv -f
+	fp = !git fetch && git prune
